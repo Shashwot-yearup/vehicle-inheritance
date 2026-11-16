@@ -6,6 +6,13 @@ public class Vehicle {
     private int cargoCapacity;
     private int fuelCapacity;
 
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+    }
+
     //getter and setters
     public String getColor() {
         return color;
@@ -15,7 +22,7 @@ public class Vehicle {
         this.color = color;
     }
 
-    public int getFuelCapacity() {
+    public int getFuelCapacity(int liters) {
         return fuelCapacity;
     }
 
